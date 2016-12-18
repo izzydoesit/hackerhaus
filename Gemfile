@@ -28,7 +28,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 
 gem 'mysql2', '0.3.20'
-gem 'thinking-sphinx', '3.2.0'
+gem 'thinking-sphinx', '3.0.0'
 
 gem "react_on_rails", "~> 6"
 
