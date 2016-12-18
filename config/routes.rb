@@ -9,6 +9,7 @@ HackerHouses::Application.routes.draw do
   root :to => 'home#index'
   resource :search
   resources :users
+  get "activate/:code" => "users#activate", :as => "activate"
   
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
