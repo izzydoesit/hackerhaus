@@ -23,14 +23,14 @@ RSpec.configure do |config|
   # This will use the defaults of :js and :server_rendering meta tags
   ReactOnRails::TestHelper.configure_rspec_to_compile_assets(config)
 
-  config.before(:suite) do
-    ThinkingSphinx::Test.init
-    ThinkingSphinx::Test.start_with_autostop
-  end
+  # config.before(:suite) do
+  #   ThinkingSphinx::Test.init
+  #   ThinkingSphinx::Test.start_with_autostop
+  # end
 
-  config.before(:each) do
-    ThinkingSphinx::Test.index if example.metadata[:js]
-  end
+  # config.before(:each) do
+  #   ThinkingSphinx::Test.index if example.metadata[:js]
+  # end
 
   config.after(:each) do
     Property.delete_all
