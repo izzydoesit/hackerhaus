@@ -8,9 +8,9 @@ HackerHouses::Application.routes.draw do
   # root 'welcome#index'
   root :to => 'home#index'
   resource :search
-  resources :users
+  resource :users
   get "activate/:code" => "users#activate", :as => "activate"
-  
+  resource :session
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
