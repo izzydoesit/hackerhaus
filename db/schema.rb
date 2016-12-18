@@ -13,11 +13,11 @@
 
 ActiveRecord::Schema.define(version: 20160414080133) do
 
-  create_table "properties", force: true do |t|
-    t.string   "title"
-    t.text     "description"
-    t.decimal  "price",       precision: 10, scale: 0
-    t.string   "city_name"
+  create_table "properties", force: :cascade do |t|
+    t.string   "title",       limit: 255
+    t.text     "description", limit: 65535
+    t.decimal  "price",                     precision: 10
+    t.string   "city_name",   limit: 255
     t.datetime "created_at"
     t.datetime "updated_at"
   end

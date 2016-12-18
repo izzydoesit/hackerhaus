@@ -25,10 +25,4 @@ describe Property do
   	p = build(:property, :madison, :price => nil)
   	expect(p).to have(1).errors_on(:price)
   end
-
 end
-
-validates :title, :presence => true
-validates :description, :presence => true
-validates :city_name, :presence => true
-validates :price, :presence => true
