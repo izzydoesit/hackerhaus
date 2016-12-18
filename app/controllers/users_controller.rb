@@ -11,4 +11,14 @@ class UsersController < ApplicationController
       render action: "new"
     end
   end
+
+  def activate 
+    @user = User.find_by_activation_code(params[:code])
+    @user.activation_code = nil
+    if @user.save
+      redirect_to root_path, notice: "Activation complete. Welcome #{@user.name}"
+    else
+      render action: 'new'
+    end
+  end
 end
