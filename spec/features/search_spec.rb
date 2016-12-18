@@ -8,6 +8,8 @@ feature 'Search for properties', %q{
       @p1 = create(:property, :ny, :madison, :title => "Property 1")
       @p2 = create(:property, :ny, :five_star_hotel, :title => "Property 2")
       @p3 = create(:property, :city_name => "Washington", :title => "Property 3")
+      ThinkingSphinx::Test.index
+    sleep 0.25 until Dir[Rails.root.join('db', 'sphinx', 'test', '*.{new,tmp}.*')].empty?
     end
 
     scenario 'search property with butler service' do
