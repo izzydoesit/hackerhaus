@@ -11,6 +11,7 @@ HackerHouses::Application.routes.draw do
   resource :users
   get "activate/:code" => "users#activate", :as => "activate"
   resource :session
+  resource :office
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
