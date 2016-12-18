@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-RealEstate::Application.load_tasks
+HackerHouses::Application.load_tasks

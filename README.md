@@ -3,10 +3,10 @@
 
 
 * Ruby version
-2.1.8
+2.3.1
 * System dependencies
-rails 4.0.4
-mysql2 0.3.12b4
+rails 4.2.5
+mysql2 0.3.20
 
 Travelers and techies alike can finally find a place to stay in SF with this easy-to-use app for locating a bed in a community living environment in the Bay area.
 
@@ -17,9 +17,9 @@ These instructions will get you a copy of the project up and running on your loc
 ### Prerequisites
 
 ```
-ruby 2.1.8
+ruby 2.3.1
 bundler 1.12.5
-rails 4.0.4
+rails 4.2.5
 thinking-sphinx 3.0.0
 
 ```
