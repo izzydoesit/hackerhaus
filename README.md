@@ -27,7 +27,7 @@ thinking-sphinx 3.0.0
 ### Installing
 From the command terminal, clone the repository to your local directory...
 ```
-$ git clone https://www.gihub.com/everysum1/hackrhouzez.git
+$ git clone https://www.gihub.com/everysum1/hackerhouses.git
 $ cd hackerhouses
 ```
 
