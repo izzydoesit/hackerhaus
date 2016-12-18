@@ -51,7 +51,7 @@ group :development, :test do
 end
 
 group :test do
-	gem 'capybara', '~>2.0.2'
+	gem 'capybara', '~>2.2.0'
 	gem 'guard'
 	gem 'guard-rspec'
 	gem 'growl'
