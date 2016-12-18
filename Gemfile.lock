@@ -262,7 +262,7 @@ DEPENDENCIES
   capybara (~> 2.2.0)
   coffee-rails (~> 4.0.0)
   email_spec
-  factory_girl_rails (~> 4.0)
+  factory_girl_rails
   growl
   guard
   guard-rspec
@@ -272,7 +272,7 @@ DEPENDENCIES
   mysql2 (= 0.3.20)
   rails (= 4.2.5)
   react_on_rails (~> 6)
-  rspec-rails (~> 3.5)
+  rspec-rails
   sass-rails (~> 4.0.2)
   sdoc
   therubyracer
