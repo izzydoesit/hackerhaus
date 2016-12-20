@@ -35,6 +35,7 @@ gem 'httparty'
 
 gem 'elasticsearch-model'
 gem 'elasticsearch-rails'
+gem 'bonsai-elasticsearch-rails'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
