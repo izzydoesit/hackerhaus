@@ -1,5 +1,5 @@
 == README
-# H@cker Houses
+# H@ckerhaus
 
 
 * Ruby version
