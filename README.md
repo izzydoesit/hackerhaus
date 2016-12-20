@@ -27,8 +27,8 @@ thinking-sphinx 3.0.0
 ### Installing
 From the command terminal, clone the repository to your local directory...
 ```
-$ git clone https://www.gihub.com/everysum1/hackerhouses.git
-$ cd hackerhouses
+$ git clone https://www.gihub.com/everysum1/hackerhaus.git
+$ cd hackerhaus
 ```
 
 Then run bundle command to install all dependencies and run the server.  

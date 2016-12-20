@@ -1,5 +1,7 @@
+
 <div class="page-header">
   <h1>Search Results</h1>
+</div>
 
   <table class="table table-striped">
   <thead>
@@ -30,4 +32,18 @@
   </tbody>
 </table>
   
+<div class="map-container">
+  <div class="map">
+    <div id='map' style='width: 400px; height: 300px;'></div>
+      <script>
+      mapboxgl.accessToken = "pk.eyJ1Ijoic3BhY2Vib3k2OSIsImEiOiJjaWtydTV5Y3MwNG5ldHptMWQyMG5zM293In0.aRElpBXtyEqNlqft55sRzw";
+      var map = new mapboxgl.Map({
+          container: 'map',
+          style: 'mapbox://styles/spaceboy69/ciwxerp5w00ui2qoicgeqh0cq',
+          zoom: 11,
+          center: [-122.432, 37.778]
+      });
+      </script>
+  </div>
 </div>
+

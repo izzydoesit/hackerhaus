@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-HackerHouses::Application.load_tasks
+Hackerhaus::Application.load_tasks
