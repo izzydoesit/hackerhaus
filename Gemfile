@@ -28,7 +28,9 @@ gem 'turbolinks', '5.0.1'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
-gem "react_on_rails", "~> 6"
+gem 'react_on_rails', '~> 6'
+
+gem 'dotenv'
 
 gem 'elasticsearch-model'
 gem 'elasticsearch-rails'
