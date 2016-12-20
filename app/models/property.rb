@@ -9,4 +9,5 @@ class Property < ActiveRecord::Base
   validates :city_name, :presence => true
   validates :price, :presence => true
 end
-Property.import
+# Property.__elasticsearch__.create_index!
+# Property.import
