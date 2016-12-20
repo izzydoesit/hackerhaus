@@ -1,4 +1,4 @@
-HackerHouses::Application.routes.draw do
+Hackerhaus::Application.routes.draw do
 
   get 'hello_world', to: 'hello_world#index'
   # The priority is based upon order of creation: first created -> highest priority.
