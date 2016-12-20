@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-RSpec.describe SearchesController, type: :controller do
+RSpec.describe OfficesController, type: :controller do
 
   describe "GET #show" do
     it "returns http success" do

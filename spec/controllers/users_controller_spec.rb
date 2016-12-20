@@ -1,10 +1,10 @@
 require 'spec_helper'
 
-RSpec.describe SearchesController, type: :controller do
+RSpec.describe UsersController, type: :controller do
 
-  describe "GET #show" do
+  describe "GET #new" do
     it "returns http success" do
-      get :show
+      get :new
       expect(response).to have_http_status(:success)
     end
   end

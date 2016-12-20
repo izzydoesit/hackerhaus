@@ -1,0 +1,5 @@
+<%= @user.name %>, please activate your account.
+
+Activation link: <%= "http://www.example.com/"+activate_path(:code => @user.activation_code) %>
+
+Thanks for signing up!
