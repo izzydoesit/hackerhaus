@@ -30,7 +30,7 @@ gem 'jbuilder', '~> 1.2'
 
 gem 'react_on_rails', '~> 6'
 
-gem 'dotenv'
+gem 'dotenv-rails'
 gem 'httparty'
 
 gem 'elasticsearch-model'
