@@ -34,7 +34,14 @@
   
 <div class="map-container">
   <div class="map">
-    
+    <div id='map' style='width: 400px; height: 300px;'></div>
+      <script>
+      mapboxgl.accessToken = MAPBOX_KEY;
+      var map = new mapboxgl.Map({
+          container: 'map',
+          style: 'mapbox://styles/mapbox/streets-v9'
+      });
+      </script>
   </div>
 </div>
 
