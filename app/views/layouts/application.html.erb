@@ -12,9 +12,10 @@
 
 </head>
 <body>
+
+
   <%= render 'partials/header' %>
 
-  <div class="container">
     <% if flash[:notice] %>
       <div class="alert alert-success">
         <a class="close" data-dismiss="alert">x</a>
@@ -36,7 +37,8 @@
     
     <%= yield %>
     
-  </div>
+  
+
 
 </body>
 </html>
