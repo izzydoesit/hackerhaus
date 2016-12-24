@@ -1,0 +1,19 @@
+<div class="pull-left">
+  <div class="logo">
+    <%= image_tag("") %>
+    <%= link_to "H@ckerhaus", root_path %>
+  </div>
+</div>
+
+<div class="pull-right">
+  <%= link_to "Explore", properties_path %>
+  <% if current_user %>
+    <%= link_to "Log Out", "/session", method: "DELETE" %>
+  <% else %>
+    <%= link_to "Log In", new_session_path %>
+  <% end %>
+
+  <span class="post-rental-btn">
+    <%= link_to "Post Your Rentals", new_property_path %>
+  </span>
+</div>
