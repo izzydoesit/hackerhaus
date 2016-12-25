@@ -1,12 +1,4 @@
-== README
 # H@ckerhaus
-
-
-* Ruby version
-2.3.1
-* System dependencies
-rails 5.0.0
-pg 0.19.0
 
 Travelers and techies alike can finally find a place to stay in SF with this easy-to-use app for locating a bed in a community living environment in the Bay area.
 
@@ -20,6 +12,7 @@ These instructions will get you a copy of the project up and running on your loc
 ruby 2.3.1
 bundler 1.12.5
 rails 5.0.0
+pg 0.19.0
 elasticsearch 5.0.0
 
 ```
