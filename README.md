@@ -1,5 +1,6 @@
 # H@ckerhaus
 
+
 Travelers and techies alike can finally find a place to stay in SF with this easy-to-use app for locating a bed in a community living environment in the Bay area.
 
 ## Getting Started
