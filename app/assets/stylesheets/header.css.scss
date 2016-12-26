@@ -1,0 +1,57 @@
+$nav-bg: #F8F8F8;
+$def-txt: #777;
+$link-hover: #0D5AA3;
+
+#nav {
+  background-color: #F8F8F8;
+  margin-bottom: 0;
+  height: 60px;
+  text-align: center;
+  .nav-content {
+    width: 1170px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+    .logo {
+
+      .dba {
+        font-size: 1.8em;
+        font-weight: 400;
+        color: #373535;
+        display: inline-block;
+        vertical-align: bottom;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+
+    }
+    #link-list {
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+    .site-nav {
+      display: inline-block;
+      vertical-align: bottom;
+      list-style: none;
+      display: inline-block;
+      li {
+        margin-right: 20px;
+        padding-top: 5px;
+      }
+      .post-rental-btn {
+        margin-top: 8px;
+        &:hover {
+          color: $link-hover;
+          text-decoration: none;
+          background: #fff;
+        }
+        a {
+          color: $def-txt;
+        }
+      }
+    }
+  }
+}

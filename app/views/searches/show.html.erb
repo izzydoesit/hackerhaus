@@ -31,6 +31,20 @@
     <% end %>
   </tbody>
 </table>
+
+<div class="Results">
+  <% @properties.each do |p| %>
+    <div class="listing">
+      <div class="thumbnail">
+        <img src="http://placehold.it/350x250" alt="neighborhood">
+        <div class="caption">
+          <h3><%= p.title %> | <%= p.city_name %></h3>
+          <p><%= p.description %></p>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
   
 <div class="map-container">
   <div class="map">
