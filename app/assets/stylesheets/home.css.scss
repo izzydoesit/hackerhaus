@@ -6,4 +6,35 @@
   }
 }
 
+#hacker-friends{
+  height: 450px;
+  background: image-url('friends-star.jpg') 50% 0 no-repeat fixed;
+  background-size: cover;
+}
+
+.community {
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .title {
+
+  }
+  .subtitle {
+    text-align: center;
+  }
+  .blurb {
+    text-align: center;
+    margin: 5% auto;
+    width: 70%;
+    font-size: 1.1em;
+    line-height: 1.2em;
+  }
+}
+
+#house-dinner {
+  height: 450px;
+  background: image-url('bonfire-friends.jpg') 50% 0 no-repeat fixed;
+  background-size: cover;
+}
 
