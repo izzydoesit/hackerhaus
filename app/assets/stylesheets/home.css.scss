@@ -51,7 +51,7 @@ h2 {
 }
 
 .community {
-  height: 450px;
+  height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -61,12 +61,19 @@ h2 {
   .subtitle {
     text-align: center;
   }
+  .quote {
+    text-align: center;
+    color: magenta;
+    font-size: 3.3em;
+    font-style: italic;
+  }
   .blurb {
     text-align: center;
-    margin: 5% auto;
+    margin: 3% auto;
     width: 70%;
     font-size: 1.1em;
-    line-height: 1.2em;
+    line-height: 1.4em;
+    letter-spacing: 0.0em;
   }
 }
 
@@ -78,37 +85,16 @@ h2 {
 
 .neighborhoods {
   margin-top: 5%;
-  
-}
-
-#hacker-friends{
-  height: 450px;
-  background: url('friends-star.jpg') 50% 0 no-repeat fixed;
-  background-size: cover;
-}
-
-.community {
-  height: 450px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  .title {
-
-  }
-  .subtitle {
-    text-align: center;
-  }
-  .blurb {
-    text-align: center;
-    margin: 5% auto;
-    width: 70%;
-    font-size: 1.1em;
-    line-height: 1.2em;
+  .thumbnails {
+    border: 0.7px solid #999;
+    margin-bottom: 14%;
+    padding: 3% 3%;
+    .hoodimage {
+      margin: 5%;
+    }
   }
 }
 
-#house-dinner {
-  height: 450px;
-  background: url('bonfire-friends.jpg') 50% 0 no-repeat fixed;
-  background-size: cover;
-}
+
+
+
