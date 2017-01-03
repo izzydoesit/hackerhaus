@@ -95,6 +95,42 @@ h2 {
   }
 }
 
+footer {
+  .links {
+    height: 170px;
+    background: #2C2C33;
+    color: #CCC;
+    text-align: center;
+    .socials {
+      list-style: none;
+      margin-left: 10%;
+      li {
+        display: inline-block;
+        margin-right: 18%;
+        padding-top: 3%;
+      }
+    }
+  }
+  .footer-info {
+  color: #999;
+    text-align: center;
+    padding-top: 0.5%;
+    font-size: 0.8em;
+
+    height: 30px;
+    background: #212126;
+    .fair-housing {
+      display: inline-block;
+      margin-left: 3%;
+    }
+    .housing-text {
+      margin-left: 0.5%;
+    }
+    .copywrite{
+      margin-left: 6%;
+    }
+  }
+}
 
 
 
