@@ -44,6 +44,18 @@ h2 {
   }
 }
 
+.neighborhoods {
+  margin-top: 5%;
+  .thumbnails {
+    border: 0.7px solid #999;
+    margin-bottom: 14%;
+    padding: 3% 3%;
+    .hoodimage {
+      margin: 5%;
+    }
+  }
+}
+
 #hacker-friends{
   height: 450px;
   background: image-url('friends-star.jpg') 50% 0 no-repeat fixed;
@@ -51,29 +63,37 @@ h2 {
 }
 
 .community {
-  height: 500px;
-  display: flex;
-  flex-direction: column;
+  height: 1000px;
+  // display: flex;
+  // flex-direction: column;
   justify-content: center;
-  .title {
-
-  }
-  .subtitle {
-    text-align: center;
-  }
-  .quote {
-    text-align: center;
-    color: magenta;
-    font-size: 3.3em;
-    font-style: italic;
-  }
-  .blurb {
-    text-align: center;
-    margin: 3% auto;
-    width: 70%;
-    font-size: 1.1em;
-    line-height: 1.4em;
-    letter-spacing: 0.0em;
+  .content {
+    padding: 4% 10%;
+    .title {
+      margin: 3% 3% 7% 3%;
+      font-size: 35px;
+    }
+    .content-row{
+      margin: 0 auto;
+      width: 600px;
+      height: 250px;
+      display: block;
+      .content-icon {
+        padding-top: 5%;
+        color: cyan;
+      }
+      .content-text {
+        text-align: center;
+        width: 400px;
+        .blurb {
+          text-align: center;
+          width: 100%;
+          font-size: 1.1em;
+          line-height: 1.4em;
+          letter-spacing: 0.0em;
+        }
+      }
+    }
   }
 }
 
@@ -83,14 +103,20 @@ h2 {
   background-size: cover;
 }
 
-.neighborhoods {
-  margin-top: 5%;
-  .thumbnails {
-    border: 0.7px solid #999;
-    margin-bottom: 14%;
-    padding: 3% 3%;
-    .hoodimage {
-      margin: 5%;
+.quote-section {
+  height: 450px;
+  .quote-content {
+    height: 100%;
+    display: table;
+    width: 70%;
+    margin: auto;
+    .quote {
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+      color: magenta;
+      font-size: 3.3em;
+      font-style: italic;
     }
   }
 }
