@@ -1,63 +1,38 @@
 
-<div class="page-header">
-  <h1>Search Results</h1>
-</div>
+<div class="container">
+  <div class="row">
 
-  <table class="table table-striped">
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Description</th>
-      <th>City</th>
-      <th>Price</th>
-    </tr>
-  </thead>
-  <tbody>
-    <% @properties.each do |p| %>
-    <tr>
-      <td>
-        <%= p.title %>
-      </td>
-      <td>
-        <%= p.description %>
-      </td>
-      <td>
-        <%= p.city_name %>
-      </td>
-      <td>
-        <%= p.price %>
-      </td>
-    </tr>
-    <% end %>
-  </tbody>
-</table>
+    <div class="list-main col-md-6">
+      <% @properties.each do |p| %>
+        <div class="listing">
+          <div class="listing-pic">
+            <img src="http://placehold.it/175x100" alt="neighborhood">
+          </div>
+          <div class="caption">
+            <h3><%= p.title %> | <%= p.city_name %></h3>
+            <p><%= p.description %></p>
+          </div>
+        </div>
+      <% end %>
+    </div>
 
-<div class="Results">
-  <% @properties.each do |p| %>
-    <div class="listing">
-      <div class="thumbnail">
-        <img src="http://placehold.it/350x250" alt="neighborhood">
-        <div class="caption">
-          <h3><%= p.title %> | <%= p.city_name %></h3>
-          <p><%= p.description %></p>
+    <div class="list-secondary">
+      <div sticky class="map-container">
+        <div class="map">
+          <div id='map' style='width: 350x; height: 300px;'></div>
+            <script>
+            mapboxgl.accessToken = "pk.eyJ1Ijoic3BhY2Vib3k2OSIsImEiOiJjaWtydTV5Y3MwNG5ldHptMWQyMG5zM293In0.aRElpBXtyEqNlqft55sRzw";
+            var map = new mapboxgl.Map({
+                container: 'map',
+                style: 'mapbox://styles/spaceboy69/ciwxerp5w00ui2qoicgeqh0cq',
+                zoom: 11,
+                center: [-122.432, 37.778]
+            });
+            </script>
         </div>
       </div>
     </div>
-  <% end %>
-</div>
-  
-<div class="map-container">
-  <div class="map">
-    <div id='map' style='width: 400px; height: 300px;'></div>
-      <script>
-      mapboxgl.accessToken = "pk.eyJ1Ijoic3BhY2Vib3k2OSIsImEiOiJjaWtydTV5Y3MwNG5ldHptMWQyMG5zM293In0.aRElpBXtyEqNlqft55sRzw";
-      var map = new mapboxgl.Map({
-          container: 'map',
-          style: 'mapbox://styles/spaceboy69/ciwxerp5w00ui2qoicgeqh0cq',
-          zoom: 11,
-          center: [-122.432, 37.778]
-      });
-      </script>
+    
   </div>
 </div>
 
