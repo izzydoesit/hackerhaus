@@ -3,6 +3,9 @@
 
 Travelers and techies alike can finally find a place to stay in SF with this easy-to-use app for locating a bed in a community living environment in the Bay area.
 
+![homepage](https://github.com/everysum1/hackerhaus/blob/development/app/assets/images/Hackerhaus - home.png)
+![homepage](https://github.com/everysum1/hackerhaus/blob/development/app/assets/images/Hackerhaus - home(cont).png)
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
