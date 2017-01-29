@@ -1,0 +1,123 @@
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  font-weight: normal;
+  font-size: 55px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+h2 {
+  font-weight: normal;
+  font-size: 25px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+#search-box {
+  height: 520px;
+  background: url('golden-gate.jpg') 10% 120% no-repeat fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  .content {
+    font-family: 'Poppins', sans-serif;
+    margin: 0 auto;
+    width: 60%;
+    vertical-align: middle;
+    .home-tagline {
+      text-shadow: 6px 4px 6px rgba(46,59,83,.5);
+    }
+    .home-subheader {
+      text-shadow: 0 4px 4px rgba(46,59,83,.5);
+    }
+  }
+}
+
+.neighborhoods {
+  margin-top: 5%;
+  .thumbnails {
+    border: 0.7px solid #999;
+    margin-bottom: 14%;
+    padding: 3% 3%;
+    .hoodimage {
+      margin: 5%;
+    }
+  }
+}
+
+#hacker-friends{
+  height: 500px;
+  background: image-url('friends-star.jpg') 50% 0 no-repeat fixed;
+  background-size: cover;
+}
+
+.community {
+  height: 1000px;
+  // display: flex;
+  // flex-direction: column;
+  justify-content: center;
+  .content {
+    padding: 4% 10%;
+    .title {
+      margin: 3% 3% 7% 3%;
+      font-size: 35px;
+    }
+    .content-row{
+      margin: 0 auto;
+      width: 600px;
+      height: 250px;
+      display: block;
+      .content-icon {
+        padding-top: 5%;
+        color: cyan;
+      }
+      .content-text {
+        text-align: center;
+        width: 400px;
+        .blurb {
+          text-align: center;
+          width: 100%;
+          font-size: 1.1em;
+          line-height: 1.4em;
+          letter-spacing: 0.0em;
+        }
+      }
+    }
+  }
+}
+
+#house-dinner {
+  height: 450px;
+  background: image-url('bonfire-friends.jpg') 50% 0 no-repeat fixed;
+  background-size: cover;
+}
+
+.quote-section {
+  height: 450px;
+  .quote-content {
+    height: 100%;
+    display: table;
+    width: 70%;
+    margin: auto;
+    .quote {
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+      color: magenta;
+      font-size: 3.3em;
+      font-style: italic;
+    }
+  }
+}
+

@@ -1,14 +1,12 @@
-== README
-# H@cker Houses
+# H@ckerhaus
 
-
-* Ruby version
-2.3.1
-* System dependencies
-rails 4.2.5
-mysql2 0.3.20
 
 Travelers and techies alike can finally find a place to stay in SF with this easy-to-use app for locating a bed in a community living environment in the Bay area.
+
+![homepage](https://github.com/everysum1/hackerhaus/blob/master/app/assets/images/Hackerhaus%20-%20home.png)
+![info-section](https://github.com/everysum1/hackerhaus/blob/master/app/assets/images/Hackerhaus%20-%20home%20(cont.).png)
+![home bottom](https://github.com/everysum1/hackerhaus/blob/master/app/assets/images/Hackerhaus-home(3).png)
+
 
 ## Getting Started
 
@@ -19,8 +17,9 @@ These instructions will get you a copy of the project up and running on your loc
 ```
 ruby 2.3.1
 bundler 1.12.5
-rails 4.2.5
-thinking-sphinx 3.0.0
+rails 5.0.0
+pg 0.19.0
+elasticsearch 5.0.0
 
 ```
 
@@ -60,9 +59,10 @@ $ heroku open
 ## Built With
 
 * [Ruby on Rails](http://api.rubyonrails.org/) -  Back-End Framework used
-* [Sphinx](https://github.com/pat/thinking-sphinx) - Search tool used
-* [MySQL2](https://www.mysql.com/) - Database used
+* [Elasticsearch](https://elastic.co) - Search tool used
+* [PostgreSQL](https://www.postgresql.org/) - Database used
 * [React-On-Rails] (https://github.com/shakacode/react_on_rails) - React front end framework used
+* [Mapbox](https://www.mapbox.com) - Map API used
 
 ## Authors
 

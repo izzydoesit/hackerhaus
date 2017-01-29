@@ -1,4 +1,4 @@
-require 'elasticsearch/model'
+# require 'elasticsearch/model'
 
 class Property < ActiveRecord::Base
   include Elasticsearch::Model
@@ -9,4 +9,6 @@ class Property < ActiveRecord::Base
   validates :city_name, :presence => true
   validates :price, :presence => true
 end
+
+# Property.__elasticsearch__.create_index!
 Property.import

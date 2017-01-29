@@ -8,8 +8,9 @@ gem 'rails', '5.0.0'
 gem 'pg'
 gem 'puma', '3.4.0'
 # Use SCSS for stylesheets
+gem 'bootstrap-sass', '~> 3.3.6'
 gem 'sass-rails'
-
+gem 'font-awesome-sass', '~> 4.4.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 
@@ -17,7 +18,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
+gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -29,24 +30,17 @@ gem 'turbolinks', '5.0.1'
 gem 'jbuilder', '~> 1.2'
 
 gem 'react_on_rails', '~> 6'
-
+gem 'faker'
 gem 'dotenv-rails'
 gem 'httparty'
 
 gem 'elasticsearch-model'
 gem 'elasticsearch-rails'
+gem 'bonsai-elasticsearch-rails'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
-end
-
-group :assets do
-  
-  gem 'less-rails-bootstrap'
-  gem 'therubyracer'
-  gem 'twitter-bootstrap-rails'
-  
 end
 
 group :development, :test do 

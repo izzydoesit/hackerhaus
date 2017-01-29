@@ -1,3 +1,4 @@
+
 Hackerhaus::Application.routes.draw do
 
   get 'hello_world', to: 'hello_world#index'
@@ -7,9 +8,11 @@ Hackerhaus::Application.routes.draw do
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
   root :to => 'home#index'
-  get "search", to: 'searches#show'
-  resource :search
+  resources :properties
+  
+  resource :search, only: [:show]
   resource :users
+
   get "activate/:code" => "users#activate", :as => "activate"
   resource :session
   resource :office

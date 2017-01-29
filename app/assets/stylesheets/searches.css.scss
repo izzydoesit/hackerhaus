@@ -1,3 +1,44 @@
 // Place all the styles related to the searches controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.list-main {
+  float: left;
+  width: 59%;
+  .listing {
+    float: left;
+    position: relative;
+    width: 100%;
+    height: 170px;
+    border: 0.5px solid #777;
+    padding: 2%;
+    &:hover {
+      background: #F2FCFF;
+    }
+    .listing-pic {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      display: inline-block;
+      width: 26.5%;
+      border: 0.2px solid #AAA;
+      padding: 1%;
+    }
+    .caption {
+      float: right;
+      width: 66%;
+      display: inline-block;
+      padding: 2%;
+    }
+  }
+}
+
+.list-secondary {
+  width: 40%;
+  float: right;
+  .map-container{
+    position: sticky;
+    top: 0;
+    
+  }
+}
