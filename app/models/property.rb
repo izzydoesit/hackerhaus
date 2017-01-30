@@ -6,8 +6,12 @@ class Property < ActiveRecord::Base
 
   validates :title, :presence => true
   validates :description, :presence => true
-  validates :city_name, :presence => true
+  validates :street, :presence => true
+  validates :city, :presence => true
+  validates :state, :presence => true
   validates :price, :presence => true
+  geocoded_by :street
+  after_validation :geocode, :if => :street_changed?
 end
 
 # Property.__elasticsearch__.create_index!
