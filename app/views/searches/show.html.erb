@@ -22,10 +22,27 @@
           <div id='map-one' class='map'></div>
             <script>
               L.mapbox.accessToken = "pk.eyJ1Ijoic3BhY2Vib3k2OSIsImEiOiJjaWtydTV5Y3MwNG5ldHptMWQyMG5zM293In0.aRElpBXtyEqNlqft55sRzw";
-
-              L.mapbox.map('map-one', 'mapbox.streets', {
+              var map = L.mapbox.map('map-one', 'mapbox.streets', {
                 scrollWheelZoom: false
               }).setView([37.782, -122.421], 13);
+
+               var featureLayer = L.mapbox.featureLayer(geojson)
+                  .addTo(map);
+
+               var geojson = featureLayer.setGeoJSON({
+                  "type": "FeatureCollection",
+                  "features": [{
+                      "type": "Feature",
+                      "geometry": {
+                          "type": "Point",
+                          "coordinates": [-122.421, 37.782]
+                      },
+                      "properties": { }
+                  }]
+              });
+
+             
+
             </script>
         </div>
       </div>
