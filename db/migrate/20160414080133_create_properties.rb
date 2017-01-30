@@ -4,7 +4,7 @@ class CreateProperties < ActiveRecord::Migration
       t.string :title
       t.text :description
       t.decimal :price
-      t.string :city_name
+      t.string :city
 
       t.timestamps
     end
