@@ -29,6 +29,7 @@ gem 'turbolinks', '5.0.1'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
+gem 'geocoder'
 gem 'react_on_rails', '~> 6'
 gem 'faker'
 gem 'dotenv-rails'
