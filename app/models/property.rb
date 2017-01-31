@@ -19,5 +19,12 @@ class Property < ActiveRecord::Base
 
 end
 
-# Property.__elasticsearch__.create_index!
+# Delete the previous properties index in Elasticsearch
+Property.__elasticsearch__.client.indices.delete index: Property.index_name rescue nil
+
+# Create the new index with the new mapping
+Property.__elasticsearch__.client.indices.create \
+  index: Property.index_name,
+  body: { settings: Property.settings.to_hash, mappings: Property.mappings.to_hash }
+
 Property.import
