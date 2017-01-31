@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="row">
+  <h1 class="form-title">Post Your Rental</h1>
+    <div class="col-md-5">
+      <%= form_for @property, html: { multipart: true } do |f| %>
+        <%= f.text_field :title, class: "form-control"  %>
+        <%= f.text_area :description, class: "form-control", size: "30x12" %>
+        <%= f.text_field :street, class: "form-control" %>
+        <%= f.text_field :city, class: "form-control" %>
+        <%= f.text_field :zip_code, class: "form-control" %>
+        <%= f.text_field :price, class: "form-control" %>
+        <%= f.file_field :image %>
+        <%= f.submit "Submit", class: "btn btn-lg btn-info" %>
+      <% end %>
+    </div>
+  </div>
+</div>
