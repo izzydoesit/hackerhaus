@@ -1,16 +1,20 @@
 class SearchesController < ApplicationController
+  $last_query = ""
 
   def show
-    if params[:query].nil?
-      @properties = Property.all
-    else
-      @properties = Property.search(params[:query]).records
+    if !request.xhr?
+      $last_query = params[:query]
     end
 
-    @locations = Property.all
+    if $last_query == ""
+      @properties = Property.all
+    else
+      @properties = Property.search($last_query).records
+    end
+
     @geojson = Array.new
 
-    @locations.each do |listing|
+    @properties.each do |listing|
       @geojson << {
         type: 'Feature',
         geometry: {
