@@ -9,7 +9,7 @@
             <img src="http://placehold.it/175x100" alt="neighborhood">
           </div>
           <div class="caption">
-            <h3><%= p.title %> | <%= p.city_name %></h3>
+            <h3><%= p.title %> | <%= p.city %></h3>
             <p><%= p.description %></p>
           </div>
         </div>
@@ -19,20 +19,11 @@
     <div class="list-secondary">
       <div sticky class="map-container">
         <div class="map">
-          <div id='map' style='width: 350x; height: 300px;'></div>
-            <script>
-            mapboxgl.accessToken = "pk.eyJ1Ijoic3BhY2Vib3k2OSIsImEiOiJjaWtydTV5Y3MwNG5ldHptMWQyMG5zM293In0.aRElpBXtyEqNlqft55sRzw";
-            var map = new mapboxgl.Map({
-                container: 'map',
-                style: 'mapbox://styles/spaceboy69/ciwxerp5w00ui2qoicgeqh0cq',
-                zoom: 11,
-                center: [-122.432, 37.778]
-            });
-            </script>
+          <div id='map-one' class='map'></div>
         </div>
       </div>
     </div>
-    
+
   </div>
 </div>
-
+    
