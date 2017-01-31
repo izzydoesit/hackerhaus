@@ -9,7 +9,7 @@
             <img src="http://placehold.it/175x100" alt="neighborhood">
           </div>
           <div class="caption">
-            <h3><%= p.title %> | <%= p.city_name %></h3>
+            <h3><%= p.title %> | <%= p.city %></h3>
             <p><%= p.description %></p>
           </div>
         </div>
@@ -20,30 +20,6 @@
       <div sticky class="map-container">
         <div class="map">
           <div id='map-one' class='map'></div>
-            <script>
-              L.mapbox.accessToken = "pk.eyJ1Ijoic3BhY2Vib3k2OSIsImEiOiJjaWtydTV5Y3MwNG5ldHptMWQyMG5zM293In0.aRElpBXtyEqNlqft55sRzw";
-              var map = L.mapbox.map('map-one', 'mapbox.streets', {
-                scrollWheelZoom: false
-              }).setView([37.782, -122.421], 13);
-
-               var featureLayer = L.mapbox.featureLayer(geojson)
-                  .addTo(map);
-
-               var geojson = featureLayer.setGeoJSON({
-                  "type": "FeatureCollection",
-                  "features": [{
-                      "type": "Feature",
-                      "geometry": {
-                          "type": "Point",
-                          "coordinates": [-122.421, 37.782]
-                      },
-                      "properties": { }
-                  }]
-              });
-
-             
-
-            </script>
         </div>
       </div>
     </div>
