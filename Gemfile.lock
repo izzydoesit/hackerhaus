@@ -1,3 +1,13 @@
+GIT
+  remote: git://github.com/elasticsearch/elasticsearch-rails.git
+  revision: 1dc6b8e1b84828d75308abdd62cc1d55ded1453a
+  specs:
+    elasticsearch-model (0.1.9)
+      activesupport (> 3)
+      elasticsearch (~> 1.1)
+      hashie
+    elasticsearch-rails (0.1.9)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -72,17 +82,12 @@ GEM
     dotenv-rails (2.2.0)
       dotenv (= 2.2.0)
       railties (>= 3.2, < 5.1)
-    elasticsearch (5.0.1)
-      elasticsearch-api (= 5.0.1)
-      elasticsearch-transport (= 5.0.1)
-    elasticsearch-api (5.0.1)
+    elasticsearch (1.1.2)
+      elasticsearch-api (= 1.1.2)
+      elasticsearch-transport (= 1.1.2)
+    elasticsearch-api (1.1.2)
       multi_json
-    elasticsearch-model (0.1.9)
-      activesupport (> 3)
-      elasticsearch (> 0.4)
-      hashie
-    elasticsearch-rails (0.1.9)
-    elasticsearch-transport (5.0.1)
+    elasticsearch-transport (1.1.2)
       faraday
       multi_json
     email_spec (2.1.0)
@@ -284,8 +289,8 @@ DEPENDENCIES
   capybara (~> 2.2.0)
   coffee-rails
   dotenv-rails
-  elasticsearch-model
-  elasticsearch-rails
+  elasticsearch-model!
+  elasticsearch-rails!
   email_spec
   factory_girl_rails
   faker
