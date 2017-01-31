@@ -12,7 +12,10 @@ class Property < ActiveRecord::Base
   validates :price, :presence => true
   geocoded_by :address
   after_validation :geocode, :if => :street_changed? || :city_changed? || :state_changed?
-  
+  has_attached_file :image, styles: { small: "64x64", med: "100x100", large: "200x200" }
+  validates_attachment :image, content_type: { content_type: %w(image/jpeg image/jpg image/png image/gif) }
+
+
   def address
     [street, city, state].compact.join(', ')
   end
