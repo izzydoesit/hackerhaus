@@ -34,6 +34,7 @@ gem 'react_on_rails', '~> 6'
 gem 'faker'
 gem 'dotenv-rails'
 gem 'httparty'
+gem 'paperclip'
 
 gem 'elasticsearch-model', git: 'git://github.com/elasticsearch/elasticsearch-rails.git'
 gem 'elasticsearch-rails', git: 'git://github.com/elasticsearch/elasticsearch-rails.git'
