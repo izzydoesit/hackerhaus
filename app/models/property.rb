@@ -12,11 +12,15 @@ class Property < ActiveRecord::Base
   validates :price, :presence => true
   geocoded_by :address
   after_validation :geocode, :if => :street_changed? || :city_changed? || :state_changed?
-  ac_field :title, search_fields: [:title, :city]
   
   def address
     [street, city, state].compact.join(', ')
   end
+
+  def as_indexed_json(options = nil) 
+    self.as_json( only: [ :title, :description, :street, :city ] ) 
+  end
+
 
   def self.search(query)
     __elasticsearch__.search(
