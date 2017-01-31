@@ -32,8 +32,12 @@ $(document).ready ->
 
       # http://leafletjs.com/reference.html#popup
       marker.bindPopup popupContent,
-        closeButton: false
-        minWidth: 320
+        closeButton: true
+        minWidth: 200
+      marker.on 'mouseover', (e) ->
+        this.openPopup()
+      marker.on 'mouseout', (e) ->
+        this.closePopup()
 
     # handles a sidebar happy hour click
     $('.listing').click (e) ->
@@ -43,6 +47,7 @@ $(document).ready ->
       # opens/closes popup for currently clicked happy hour
       map.featureLayer.eachLayer (marker) ->
         if marker.feature.properties.name is currentlyClickedName
-          console.log(marker)
+          map.panTo new L.LatLng marker._latlng.lat, marker._latlng.lng
+            
           id = marker._leaflet_id
           map._layers[id].openPopup()
