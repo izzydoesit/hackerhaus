@@ -2,6 +2,7 @@
 Hackerhaus::Application.routes.draw do
 
   get 'hello_world', to: 'hello_world#index'
+  get 'search/property_markers', to: 'searches#property_markers'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -10,7 +11,10 @@ Hackerhaus::Application.routes.draw do
   root :to => 'home#index'
   resources :properties
   
-  resource :search, only: [:show]
+  resource :search do 
+    get 'property_markers', :on => :collection
+  end
+  
   resource :users
 
   get "activate/:code" => "users#activate", :as => "activate"
