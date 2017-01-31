@@ -10,13 +10,10 @@ Hackerhaus::Application.routes.draw do
   # root 'welcome#index'
   root :to => 'home#index'
   resources :properties
-  
-  resource :search do 
-    get 'property_markers', :on => :collection
-  end
+  resource :search, only: [:show]
   
   resource :users
-
+  
   get "activate/:code" => "users#activate", :as => "activate"
   resource :session
   resource :office

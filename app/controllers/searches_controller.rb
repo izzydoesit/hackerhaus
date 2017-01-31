@@ -6,9 +6,7 @@ class SearchesController < ApplicationController
     else
       @properties = Property.search(params[:query]).records
     end
-  end
 
-  def property_markers
     @locations = Property.all
     @geojson = Array.new
 
@@ -27,11 +25,11 @@ class SearchesController < ApplicationController
           :'marker-size' => 'medium'
         }
       }
-      
-      respond_to do |format|
-        format.html
-        format.json { render :json => @geojson and return }
-      end
+    end
+    
+    respond_to do |format|
+      format.html
+      format.json { render :json => @geojson }
     end
   end
 
