@@ -1,4 +1,4 @@
-# require 'elasticsearch/model'
+require 'elasticsearch/model'
 
 class Property < ActiveRecord::Base
   include Elasticsearch::Model
@@ -10,8 +10,13 @@ class Property < ActiveRecord::Base
   validates :city, :presence => true
   validates :state, :presence => true
   validates :price, :presence => true
-  geocoded_by :street
-  after_validation :geocode, :if => :street_changed?
+  geocoded_by :address
+  after_validation :geocode, :if => :street_changed? || :city_changed? || :state_changed?
+
+  def address
+    [street, city, state].compact.join(', ')
+  end
+
 end
 
 # Property.__elasticsearch__.create_index!
