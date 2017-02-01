@@ -7,7 +7,7 @@ $(document).ready ->
     map = L.mapbox.map("map-one", "mapbox.streets", {
       scrollWheelZoom: false
     }).setView([37.782, -122.421], 13)
-
+    # markersLayer = L.featureGroup().addTo(map);
     # get JSON object
     # on success, parse it and
     # hand it over to MapBox for mapping
@@ -34,10 +34,6 @@ $(document).ready ->
       marker.bindPopup popupContent,
         closeButton: true
         minWidth: 200
-      marker.on 'mouseover', (e) ->
-        this.openPopup()
-      marker.on 'mouseout', (e) ->
-        this.closePopup()
 
     # handles a sidebar happy hour click
     $('.listing').click (e) ->
@@ -51,3 +47,10 @@ $(document).ready ->
             
           id = marker._leaflet_id
           map._layers[id].openPopup()
+
+    
+
+    # markersLayer.on("click", (event) ->
+    #     clickedMarker = event.layer;
+    #     alert
+    
