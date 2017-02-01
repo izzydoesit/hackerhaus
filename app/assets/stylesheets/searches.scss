@@ -1,7 +1,12 @@
 // Place all the styles related to the searches controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
+.container-wrapper {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  min-height: 700px;
 .list-main {
   float: left;
   width: 59%;
@@ -45,4 +50,5 @@
       height: 450px;
     }
   }
+}
 }
