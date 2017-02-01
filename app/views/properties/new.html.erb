@@ -8,15 +8,47 @@
       <div class="col-md-6 col-md-offset-3" >
         <div class="form-wrapper">
           <%= form_for @property, html: { multipart: true } do |f| %>
-            <%= f.text_field :title, class: "form-control", placeholder: "Title" %>
-            <%= f.text_area :description, class: "form-control", size: "30x12", placeholder: "Write your description here..." %>
-            <%= f.text_field :street, class: "form-control", placeholder: "Street address" %>
-            <%= f.text_field :city, class: "form-control col-md-4", placeholder: "City" %>
-            <%= f.select :state, @states, class: "form-control", placeholder: "State"%>
-            <%= f.text_field :zip_code, class: "form-control col-md-4", placeholder: "Zip Code" %>
-            <%= f.text_field :price, class: "form-control col-md-3", placeholder: "Price" %>
-            <%= f.file_field :image %>
-            <%= f.submit "Submit", class: "btn btn-lg btn-info" %>
+
+            <% if @property.errors.any? %>
+              <div id="error_explanation">
+                <h2><%= pluralize(@property.errors.count, "error") %> prohibited this todo from being saved:</h2>
+
+                <ul>
+                <% @property.errors.full_messages.each do |message| %>
+                  <li><%= message %></li>
+                <% end %>
+                </ul>
+              </div>
+            <% end %>
+
+            <div class="form-group">
+              <%= f.text_field :title, class: "form-control", placeholder: "Title" %>
+            </div>
+            <div class="form-group">
+              <%= f.text_area :description, class: "form-control", size: "30x12", placeholder: "Write your description here..." %>
+            </div>
+            <div class="form-group">
+              <%= f.text_field :street, class: "form-control", placeholder: "Street address" %>
+            </div>
+            <div class="form-group col-md-4 inline">
+                <%= f.text_field :city, class: "form-control", placeholder: "City" %>
+            </div>
+            <div class="form-group col-md-2 inline">
+              <%= f.select :state, @states, placeholder: "State"%>
+            </div>
+            <div class="form-group col-md-3 inline">
+                <%= f.text_field :zip_code, class: "form-control", placeholder: "Zip Code" %>
+            </div>
+            <div class="form-group">
+              <div class="col-md-3 inline last">
+                <%= f.text_field :price, class: "form-control", placeholder: "Price" %>
+              </div>
+            </div>
+            <div class="form-group upload">
+              <%= f.label :image, "Upload a picture:" %>
+              <%= f.file_field :image, label: "Upload a picture:"%>
+            </div>
+            <%= f.submit "Submit", class: "btn btn-block btn-lg btn-info pull-right" %>
           <% end %>
         </div>
       </div>

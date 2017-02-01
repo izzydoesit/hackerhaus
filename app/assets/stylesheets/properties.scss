@@ -5,4 +5,18 @@ h1.form-title {
 
 .form-wrapper {
   margin: 3%;
+  .inline {
+    padding-left: 0;
+  }
+  .last {
+    padding-right: 0;
+  }
+  .upload {
+    width: 100%;
+    display: inline-block;
+    input {
+      display: inline-block;
+      color: cornflowerblue;
+    }
+  }
 }
