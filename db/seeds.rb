@@ -28,5 +28,5 @@ Property.create(title: 'El Capitan', description: 'Mission central, single units
 
 Property.create(title: 'Balmoral House', description: 'Classic newly renovated building in Lower Nob/Tenderloin with dumbwaiters and copper trims', street: '1010 Bush St', city: 'San Francisco', state: 'CA', zip_code: 94109, price: rand(500..3000), image: File.new("app/assets/images/balmoral.jpg"))
 
-Property.create(title: 'The Yale', description: 'Vintage design in north Tenderloin/Lower Nob area with private bathroom included in your unit', street: '633 Larkin St', city: 'San Francisco', state: 'CA', zip_code: 94109, price: rand(500..3000), image: File.new("app/assets/images/yale.jpg"))
+Property.create(title: 'The Yale', description: 'Vintage design in Tenderloin/Lower Nob area with private bathroom included in your unit', street: '633 Larkin St', city: 'San Francisco', state: 'CA', zip_code: 94109, price: rand(500..3000), image: File.new("app/assets/images/yale.jpg"))
 
