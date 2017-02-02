@@ -20,7 +20,6 @@
 <div class="container">
   <div class="neighborhoods">
       <% @hoods.each do |hood, pic| %>
-      
         <div class="col-sm-6 col-md-4">
           <div class="thumbnails">
             <a href="/search?query=<%= hood %>">
@@ -32,7 +31,6 @@
             </div>
           </div>
         </div>
-
       <% end %>
   </div>
 </div>
