@@ -22,26 +22,26 @@
             <% end %>
 
             <div class="form-group">
-              <%= f.text_field :title, class: "form-control", placeholder: "Title" %>
+              <%= f.text_field :title, class: "form-control", placeholder: "Title", required: true  %>
             </div>
             <div class="form-group">
-              <%= f.text_area :description, class: "form-control", size: "30x12", placeholder: "Write your description here..." %>
+              <%= f.text_area :description, class: "form-control", size: "30x12", placeholder: "Write your description here...", required: true %>
             </div>
             <div class="form-group">
-              <%= f.text_field :street, class: "form-control", placeholder: "Street address" %>
+              <%= f.text_field :street, class: "form-control", placeholder: "Street address", required: true  %>
             </div>
             <div class="form-group col-md-4 inline">
-                <%= f.text_field :city, class: "form-control", placeholder: "City" %>
+                <%= f.text_field :city, class: "form-control", placeholder: "City", required: true  %>
             </div>
             <div class="form-group col-md-2 inline">
-              <%= f.select :state, @states, placeholder: "State", selected: "CA" %>
+              <%= f.select :state, @states, selected: "CA", required: true  %>
             </div>
             <div class="form-group col-md-3 inline">
-                <%= f.text_field :zip_code, class: "form-control", placeholder: "Zip Code" %>
+                <%= f.text_field :zip_code, class: "form-control", placeholder: "Zip Code", required: true  %>
             </div>
             <div class="form-group">
               <div class="col-md-3 inline last">
-                <%= f.text_field :price, class: "form-control", placeholder: "Price" %>
+                <%= f.text_field :price, class: "form-control", placeholder: "Price", required: true  %>
               </div>
             </div>
             <div class="form-group upload">
