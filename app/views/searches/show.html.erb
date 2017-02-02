@@ -1,4 +1,4 @@
-
+<div class="container-wrapper">
 <div class="container">
   <div class="row">
 
@@ -6,11 +6,16 @@
       <% @properties.each do |p| %>
         <div class="listing">
           <div class="listing-pic">
-            <img src="http://placehold.it/175x100" alt="neighborhood">
+            <% if p.image.file? %>
+              <img src="<%= p.image %>" width="175px" height="125px" alt="neighborhood">
+            <% else %>
+              <img src="http://placehold.it/175x125" width="175px" height="125px" alt="neighborhood">
+            <% end %>
           </div>
           <div class="caption">
-            <h3><%= p.title %> | <%= p.city %></h3>
-            <p><%= p.description %></p>
+            <h2><%= p.title %></h2>
+            <h3><%= p.city %></h3>
+            <p><%= truncate(p.description, length: 60) %></p>
           </div>
         </div>
       <% end %>
@@ -27,3 +32,4 @@
   </div>
 </div>
     
+</div>
