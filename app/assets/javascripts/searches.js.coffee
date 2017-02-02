@@ -2,7 +2,7 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
-$(document).ready ->
+$(document).on "page:load" ->
     L.mapbox.accessToken = "pk.eyJ1Ijoic3BhY2Vib3k2OSIsImEiOiJjaWtydTV5Y3MwNG5ldHptMWQyMG5zM293In0.aRElpBXtyEqNlqft55sRzw";
     map = L.mapbox.map("map-one", "mapbox.streets", {
       scrollWheelZoom: false
