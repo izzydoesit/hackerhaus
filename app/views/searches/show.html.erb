@@ -14,8 +14,8 @@
           </div>
           <div class="caption">
             <h2><%= p.title %></h2>
-            <h3><%= p.city %></h3>
-            <p><%= truncate(p.description, length: 60) %></p>
+            <p><%= p.city %> | $<%= p.price %><p>
+            <p><%= truncate(p.description, length: 140) %></p>
           </div>
         </div>
       <% end %>
