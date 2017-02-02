@@ -8,10 +8,9 @@
   margin-bottom: 1%;
   min-height: 700px;
 .list-main {
-  float: left;
   width: 59%;
   .listing {
-    float: left;
+    display: inline-block;
     position: relative;
     width: 100%;
     height: 170px;
@@ -25,15 +24,23 @@
       top: 10px;
       left: 10px;
       display: inline-block;
-      width: 26.5%;
+      width: 29%;
       border: 0.2px solid #AAA;
       padding: 1%;
+      height: 85%;
     }
     .caption {
+      width: 70%;
       float: right;
-      width: 66%;
-      display: inline-block;
       padding: 2%;
+      h2 {
+        font-size: 1.5em;
+      }
+      h3 {
+        font-size: 1.2em;
+        font-weight: 600;
+        text-align: center;
+      }
     }
   }
 }
