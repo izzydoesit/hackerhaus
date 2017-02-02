@@ -43,10 +43,13 @@ $link-hover: #0D5AA3;
       }
       .post-rental-btn {
         margin-top: 8px;
+        transition: all 0.2s ease;
         &:hover {
           color: $link-hover;
           text-decoration: none;
-          background: #FFF8F8;
+          background: #FFF;
+                    transform: scale(1.2)
+
         }
         a {
           color: $def-txt;
