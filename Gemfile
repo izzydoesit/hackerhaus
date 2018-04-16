@@ -36,7 +36,7 @@ gem 'faker'
 gem 'dotenv-rails'
 gem 'httparty'
 gem 'paperclip'
-
+gem 'nokogiri', '~> 1.8.1'
 gem 'elasticsearch-model', git: 'git://github.com/elasticsearch/elasticsearch-rails.git'
 gem 'elasticsearch-rails', git: 'git://github.com/elasticsearch/elasticsearch-rails.git'
 gem 'bonsai-elasticsearch-rails'
