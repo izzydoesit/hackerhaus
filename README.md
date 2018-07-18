@@ -61,7 +61,7 @@ $ heroku open
 * [Ruby on Rails](http://api.rubyonrails.org/) -  Back-End Framework used
 * [Elasticsearch](https://elastic.co) - Search tool used
 * [PostgreSQL](https://www.postgresql.org/) - Database used
-* [React-On-Rails] (https://github.com/shakacode/react_on_rails) - React front end framework used
+* [React-On-Rails](https://github.com/shakacode/react_on_rails) - React front end framework used
 * [Mapbox](https://www.mapbox.com) - Map API used
 
 ## Authors
