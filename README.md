@@ -3,9 +3,9 @@
 
 Travelers and techies alike can finally find a place to stay in SF with this easy-to-use app for locating a bed in a community living environment in the Bay area.
 
-![homepage](https://github.com/everysum1/hackerhaus/blob/master/app/assets/images/Hackerhaus%20-%20home.png)
-![info-section](https://github.com/everysum1/hackerhaus/blob/master/app/assets/images/Hackerhaus%20-%20home%20(cont.).png)
-![home bottom](https://github.com/everysum1/hackerhaus/blob/master/app/assets/images/Hackerhaus-home(3).png)
+![homepage](https://github.com/izzydoesit/hackerhaus/blob/master/app/assets/images/Hackerhaus%20-%20home.png)
+![info-section](https://github.com/izzydoesit/hackerhaus/blob/master/app/assets/images/Hackerhaus%20-%20home%20(cont.).png)
+![home bottom](https://github.com/izzydoesit/hackerhaus/blob/master/app/assets/images/Hackerhaus-home(3).png)
 
 
 ## Getting Started
@@ -26,7 +26,7 @@ elasticsearch 5.0.0
 ### Installing
 From the command terminal, clone the repository to your local directory...
 ```
-$ git clone https://www.gihub.com/everysum1/hackerhaus.git
+$ git clone https://www.github.com/izzydoesit/hackerhaus.git
 $ cd hackerhaus
 ```
 
@@ -66,7 +66,7 @@ $ heroku open
 
 ## Authors
 
-* **Israel Matos** - [Github](https://github.com/everysum1)
+* **Israel Matos** - [Github](https://github.com/izzydoesit)
 
 ## License
 
