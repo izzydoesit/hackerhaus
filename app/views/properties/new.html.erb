@@ -30,17 +30,17 @@
             <div class="form-group">
               <%= f.text_field :street, class: "form-control", placeholder: "Street address", required: true  %>
             </div>
-            <div class="form-group col-md-4 inline">
+            <div class="form-group col-xs-12 col-sm-6 col-md-4 inline">
                 <%= f.text_field :city, class: "form-control", placeholder: "City", required: true  %>
             </div>
-            <div class="form-group col-md-2 inline">
+            <div class="form-group col-xs-12 col-sm-6 col-md-2 inline">
               <%= f.select :state, @states, selected: "CA", required: true  %>
             </div>
-            <div class="form-group col-md-3 inline">
+            <div class="form-group col-xs-12 col-sm-6 col-md-3 inline">
                 <%= f.text_field :zip_code, class: "form-control", placeholder: "Zip Code", required: true  %>
             </div>
             <div class="form-group">
-              <div class="col-md-3 inline last">
+              <div class="col-xs-12 col-sm-6 col-md-3 inline last">
                 <%= f.text_field :price, class: "form-control", placeholder: "Price", required: true  %>
               </div>
             </div>
